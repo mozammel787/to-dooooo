@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:not(:placeholder-shown) ~ .input-text{
+  @apply text-blue-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+input[type="text"]:focus ~ .input-text-err,
+input[type="text"]:not(:placeholder-shown) ~ .input-text-err{
+  @apply text-red-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+input[type="time"]:focus ~ .input-text,
+input[type="time"]:not(:placeholder-shown) ~ .input-text{
+  @apply text-blue-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+input[type="time"]:focus ~ .input-text-err,
+input[type="time"]:not(:placeholder-shown) ~ .input-text-err{
+  @apply text-red-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+input[type="date"]:focus ~ .input-text,
+input[type="date"]:not(:placeholder-shown) ~ .input-text{
+  @apply text-blue-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+input[type="date"]:focus ~ .input-text-err,
+input[type="date"]:not(:placeholder-shown) ~ .input-text-err{
+  @apply text-red-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+textarea:focus ~ .input-text,
+textarea:not(:placeholder-shown) ~ .input-text{
+  @apply text-blue-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
+textarea:focus ~ .input-text-err,
+textarea:not(:placeholder-shown) ~ .input-text-err{
+  @apply text-red-500 transform -translate-y-5 -translate-x-2 scale-75;
+}
